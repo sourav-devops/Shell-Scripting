@@ -1,5 +1,29 @@
+employee.txt
+
+ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000
+tarun peon sales 15000
+deepak clerk sales 23000
+sunil peon sales 13000
+satvik director purchase 80000
+
 ##to print all lines
 cat employees.txt |awk -F" " '{print}'
+
+###to print all lines containing manager keyword
+awk '/manager/ {print}' employee.txt
     
-  
+##to print 1st and 4th word from each line/record
+awk '{print $1,$4}' employee.txt  
+
+##print 4th to 6th record
+awk  'NR==4, NR==6 {print $0}' employee.txt
+
+##USE OF "NR" BULIT IN variable 
+#print 4th line
+awk NR==4 employee.txt
+awk 'NR==4 {print $0}'
+
   
