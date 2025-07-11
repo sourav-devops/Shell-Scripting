@@ -1,0 +1,5 @@
+##to print all lines
+cat employees.txt |awk -F" " '{print}'
+    
+  
+  
