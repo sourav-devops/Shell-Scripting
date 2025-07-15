@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read -p "enetr you age: " a
+if [ $a -ge 60 ]; then
+        echo "you are a senior"
+elif [ $a  -lt 60 ] && [ $a -gt 18 ]; then
+        echo "you are an adult"
+else
+        echo "you are a minor"
+fi
