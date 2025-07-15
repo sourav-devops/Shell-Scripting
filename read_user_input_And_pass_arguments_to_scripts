@@ -1,3 +1,10 @@
+#$1=first argument
+#$2=second
+#$0=script.sh
+#$#=total arguments
+
+
+
 #!/bin/bash
 if [ $# -ne 2 ]
 then
