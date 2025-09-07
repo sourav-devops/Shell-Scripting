@@ -8,3 +8,4 @@ elif [ -f "$a" ]; then
 else
 	echo "file does not exist"
 fi
+#ok
